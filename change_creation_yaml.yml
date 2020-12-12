@@ -8,25 +8,17 @@
     register: new_change_request
     snow_record:
       data:
-        u_environment: "Production"
+        requested_by: "{{item.Requested_by}}"
         cmdb_ci: "{{item.CI}}"
-        start_date: "{{item.Release_date}}"
+        start_date: "{{item.Release_start_date}}"
+        end_date: "{{item.Release_end_date}}"
         short_description: "{{item.Short_Description}}"
         category: "Applications Software"
         assignment_group: "Change Management"
         assigned_to: "Change Manager"
-        u_change_coordinator: "{{item.Change_Coordinator}}"
         u_approver: "{{item.Technical_Approver}}"
         type: "Normal"
-        implementation_plan: "{{item.Implemention_Plan}}"
-        backout_plan: "{{item.BackoutPlan}}"
-        test_plan: "{{item.ValidationPlan}}"
-        requested_by: Abel Tuter
         description: "{{item.Description}}"
-        u_director_approval: '.Caitlin Reiniger'
-        u_product_approval: '.Abraham Lincoln'
-        u_sr_director_approval: '.Adela Cervantsz'
-        u_vp_approval: '.Barbara Hindley'
       instance: dev99640
       password: 9tdEV1gUluAW
       state: present
