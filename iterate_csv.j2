@@ -6,10 +6,9 @@ serverinventory:
   - Requested_by: '{{ list[0]|trim() }}'
     CI: '{{ list[1]|trim() }}'
     Short_Description: '{{ list[2]|trim() }}'
-    Description: '{{list[14]|trim() }}'
-    Release_start_date: '{{ list[3]|trim() }}'
-    Release_end_date: '{{list[4]trim() }}'
-    Technical_Approver: '{{ list[9]|trim() }}'
-    
+    Description: '{{list[3]|trim() }}'
+    Release_start_date: '{{ list[4]|trim() }}'
+    Release_end_date: '{{list[5]trim() }}'
+    Technical_Approver: '{{ list[6]|trim() }}' 
 {%   endif %}
 {% endfor %}
