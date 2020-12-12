@@ -1,3 +1,4 @@
+  
 ---
 serverinventory:
 {% for item in csvfile.split("\n") %}
@@ -10,5 +11,6 @@ serverinventory:
     Release_start_date: '{{ list[4]|trim() }}'
     Release_end_date: '{{list[5]trim() }}'
     Technical_Approver: '{{ list[6]|trim() }}' 
+    
 {%   endif %}
 {% endfor %}
