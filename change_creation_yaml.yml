@@ -10,15 +10,15 @@
       data:
         requested_by: "{{item.Requested_by}}"
         cmdb_ci: "{{item.CI}}"
+        short_description: "{{item.Short_Description}}"
+        description: "{{item.Description}}"
         start_date: "{{item.Release_start_date}}"
         end_date: "{{item.Release_end_date}}"
-        short_description: "{{item.Short_Description}}"
+        u_approver: "{{item.Technical_Approver}}"
         category: "Applications Software"
         assignment_group: "Change Management"
         assigned_to: "Change Manager"
-        u_approver: "{{item.Technical_Approver}}"
         type: "Normal"
-        description: "{{item.Description}}"
       instance: dev99640
       password: 9tdEV1gUluAW
       state: present
